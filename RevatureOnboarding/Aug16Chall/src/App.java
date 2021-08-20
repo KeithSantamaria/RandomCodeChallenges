@@ -7,7 +7,7 @@ public class App {
         Scanner sc = new Scanner(sentence);
         ArrayList<String> buckets= new ArrayList<>();
         StringBuilder temp = new StringBuilder();
-        int i = 0;
+        //int i = 0;
         while(sc.hasNext()){
             String curr = sc.next();
             // System.out.println(curr + " " + curr.length() ) ;
@@ -31,6 +31,7 @@ public class App {
             // System.out.println("-------");
         }
         buckets.add(temp.toString());
+        sc.close();
         return buckets;
     }
     public static void main(String[] args) throws Exception {
